@@ -60,9 +60,9 @@ pip install -r requirements.txt
     ```
 
  2. **Run the API**
-   ```bash
-   python main.py
-   ```
+    ```bash
+    python main.py
+    ```
 
  3. **Example API Request**
     ```bash
