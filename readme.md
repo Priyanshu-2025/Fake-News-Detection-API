@@ -1,26 +1,18 @@
 # 📰 Fake News Detection API
 
-This project is a machine learning-powered API that detects whether a news article is **fake** or **real**. It uses natural language processing (NLP) techniques and a trained classification model to analyze news content and make predictions.
+This project is a machine learning-powered API that detects whether a news article is **fake** or **real**.  
+It uses Natural Language Processing (NLP) techniques and a trained classification model to analyze news content and make predictions.
+
+---
 
 ## 🚀 Features
 
-- Detects fake vs. real news using trained ML models
-- RESTful API built with Python
-- Pre-trained model and vectorizer included
-- Easy-to-use interface for predictions
+- Detects **fake vs. real news** using trained ML models  
+- RESTful API built with **Flask (Python)**  
+- Includes a **pre-trained model and vectorizer**  
+- Easy-to-use interface for predictions  
 
-## 📁 Project Structure
-
-# 📰 Fake News Detection API
-
-This project is a machine learning-powered API that detects whether a news article is **fake** or **real**. It uses natural language processing (NLP) techniques and a trained classification model to analyze news content and make predictions.
-
-## 🚀 Features
-
-- Detects fake vs. real news using trained ML models
-- RESTful API built with Python
-- Pre-trained model and vectorizer included
-- Easy-to-use interface for predictions
+---
 
 ## 📁 Project Structure
 
@@ -33,12 +25,27 @@ This project is a machine learning-powered API that detects whether a news artic
 ├── requirements.txt     # Python dependencies  
 
 
+
+
+---
+
 ## 🧠 How It Works
 
-1. **Data Preprocessing**: Combines `Fake.csv` and `True.csv`, cleans text, and labels data.
-2. **Vectorization**: Uses TF-IDF to convert text into numerical features.
-3. **Model Training**: Trains a classifier (e.g., Logistic Regression or Naive Bayes).
-4. **Prediction API**: Accepts news text and returns a prediction.
+1. **Data Preprocessing**  
+   - Combines `Fake.csv` and `True.csv`  
+   - Cleans and labels the text data  
+
+2. **Vectorization**  
+   - Uses **TF-IDF Vectorizer** to convert text into numerical features  
+
+3. **Model Training**  
+   - Trains a classifier (e.g., Logistic Regression / Naive Bayes)  
+
+4. **Prediction API**  
+   - Accepts news text (JSON format)  
+   - Returns prediction: `"Fake"` or `"Real"`  
+
+---
 
 ## 🛠 Installation
 
@@ -49,41 +56,41 @@ cd fake-news-detector
 
 # Install dependencies
 pip install -r requirements.txt
-
 ```
 
 ## 🧪 Usage
+Train the Model
+```bash
+python train_model.py
+```
 
- 1. **Train the Model** 
-    ```bash
-    python train_model.py
-    ```
+Run the API
+```bash
+python main.py
+```
 
- 2. **Run the API**
-    ```bash
-    python main.py
-    ```
+Example API Request (using curl)
+```bash
+curl -X POST http://localhost:5000/predict \
+     -H "Content-Type: application/json" \
+     -d '{"text": "The government has announced a new policy today..."}'
+```
 
- 3. **Example API Request**
-    ```bash
-    curl -X POST http://localhost:5000/predict \
-         -H "Content-Type: application/json" \
-         -d '{"text": "The government has announced a new policy today..."}'
-    ```
-
- 4. **Response**
-    ```json
-    {
-      "prediction": "Real"
-    }
-    ```
+Example Response
+```json
+{
+  "prediction": "Real"
+}
+```
 
 ## 📊 Dataset
-├── Fake.csv   
-├── True.csv  
+The dataset consists of two files:
+1. Fake.csv → Fake news articles
+2. True.csv → Real news articles  
+📌 Source: [Kaggle Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
 
 ## 🙌 Acknowledgments
-- Kaggle for the dataset
-- Scikit-learn for ML tools
-- Flask for building the API
+1. Kaggle → For the dataset
+2. Scikit-learn → For ML tools
+3. Flask → For building the API
