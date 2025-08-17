@@ -89,6 +89,8 @@ The dataset consists of two files:
 2. True.csv → Real news articles  
 📌 Source: [Kaggle Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
+## 📄 License
+This project is open-source under the MIT License.
 
 ## 🙌 Acknowledgments
 1. Kaggle → For the dataset
