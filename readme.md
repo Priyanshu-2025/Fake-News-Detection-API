@@ -50,13 +50,15 @@ cd fake-news-detector
 # Install dependencies
 pip install -r requirements.txt
 
+```
 
-
-🧪 Usage
+## 🧪 Usage
 Train the Model 
+```bash
 python train_model.py
 
 Run the API
+```bash
 python main.py
 
 Example API Request
