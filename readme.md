@@ -51,8 +51,8 @@ cd fake-news-detector
 pip install -r requirements.txt
 
 
-🧪 Usage
 
+🧪 Usage
 Train the Model 
 python train_model.py
 
@@ -72,7 +72,7 @@ Response
 }
 
 
-📊 Datase
+📊 Dataset
 ├── Fake.csv   
 ├── True.csv  
 
