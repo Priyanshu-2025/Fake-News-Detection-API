@@ -86,7 +86,7 @@ Example Response
 ## 📊 Dataset
 The dataset consists of two files:
 1. Fake.csv → Fake news articles
-2. True.csv → Real news articles
+2. True.csv → Real news articles  
 📌 Source: [Kaggle Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
 
