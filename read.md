@@ -16,15 +16,16 @@ It uses Natural Language Processing (NLP) techniques and a trained classificatio
 
 ## 📁 Project Structure
 
-├── main.py # API entry point
-├── train_model.py # Script to train the model
-├── model.pkl # Trained classification model
-├── vectorizer.pkl # TF-IDF vectorizer
-├── Fake.csv # Dataset of fake news articles
-├── True.csv # Dataset of real news articles
-├── requirements.txt # Python dependencies
+├── main.py              # API entry point  
+├── train_model.py       # Script to train the model  
+├── model.pkl            # Trained classification model  
+├── vectorizer.pkl       # TF-IDF vectorizer  
+├── Fake.csv             # Dataset of fake news articles  
+├── True.csv             # Dataset of real news articles  
+├── requirements.txt     # Python dependencies  
 
-yaml
+
+
 
 ---
 
@@ -55,41 +56,41 @@ cd fake-news-detector
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-🧪 Usage
+## 🧪 Usage
 Train the Model
-bash
+```bash
 python train_model.py
+```
 
 Run the API
-bash
+```bash
 python main.py
+```
 
 Example API Request (using curl)
-bash
+```bash
 curl -X POST http://localhost:5000/predict \
      -H "Content-Type: application/json" \
      -d '{"text": "The government has announced a new policy today..."}'
+```
 
 Example Response
-json
+```json
 {
   "prediction": "Real"
 }
+```
 
-📊 Dataset
+## 📊 Dataset
 The dataset consists of two files:
-
-Fake.csv → Fake news articles
-
-True.csv → Real news articles
-
-📌 Source: Kaggle Fake News Dataset
+1. Fake.csv → Fake news articles
+2. True.csv → Real news articles
+📌 Source: [Kaggle Fake News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 
 
-🙌 Acknowledgments
-Kaggle → For the dataset
-
-Scikit-learn → For ML tools
-
-Flask → For building the API
+## 🙌 Acknowledgments
+1. Kaggle → For the dataset
+2. Scikit-learn → For ML tools
+3. Flask → For building the API
