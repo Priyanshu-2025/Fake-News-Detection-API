@@ -24,13 +24,13 @@ This project is a machine learning-powered API that detects whether a news artic
 
 ## 📁 Project Structure
 
-├── main.py              # API entry point 
-├── train_model.py       # Script to train the model 
-├── model.pkl            # Trained classification model 
-├── vectorizer.pkl       # TF-IDF vectorizer 
-├── Fake.csv             # Dataset of fake news articles 
-├── True.csv             # Dataset of real news articles 
-├── requirements.txt     # Python dependencies
+├── main.py              # API entry point  
+├── train_model.py       # Script to train the model  
+├── model.pkl            # Trained classification model  
+├── vectorizer.pkl       # TF-IDF vectorizer  
+├── Fake.csv             # Dataset of fake news articles  
+├── True.csv             # Dataset of real news articles  
+├── requirements.txt     # Python dependencies  
 
 
 ## 🧠 How It Works
