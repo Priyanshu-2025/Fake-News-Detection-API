@@ -53,33 +53,37 @@ pip install -r requirements.txt
 ```
 
 ## 🧪 Usage
-Train the Model 
-```bash
-python train_model.py
 
-Run the API
-```bash
-python main.py
+ 1. **Train the Model** 
+    ```bash
+    python train_model.py
+    ```
 
-Example API Request
-curl -X POST http://localhost:5000/predict \
-     -H "Content-Type: application/json" \
-     -d '{"text": "The government has announced a new policy today..."}'
+ 2. **Run the API**
+   ```bash
+   python main.py
+   ```
 
+ 3. **Example API Request**
+    ```bash
+    curl -X POST http://localhost:5000/predict \
+         -H "Content-Type: application/json" \
+         -d '{"text": "The government has announced a new policy today..."}'
+    ```
 
-Response
+ 4. **Response**
+    ```json
+    {
+      "prediction": "Real"
+    }
+    ```
 
-{
-  "prediction": "Real"
-}
-
-
-📊 Dataset
+## 📊 Dataset
 ├── Fake.csv   
 ├── True.csv  
 
 
-🙌 Acknowledgments
+## 🙌 Acknowledgments
 - Kaggle for the dataset
 - Scikit-learn for ML tools
 - Flask for building the API
