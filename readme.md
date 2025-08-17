@@ -51,7 +51,7 @@ It uses Natural Language Processing (NLP) techniques and a trained classificatio
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fake-news-detector.git
+git clone https://github.com/Priyanshu-2025/fake-news-detector.git
 cd fake-news-detector
 
 # Install dependencies
